@@ -33,5 +33,8 @@ plt.ylabel('Feature', fontsize=12)
 plt.title('Feature Importance for Satisfaction Prediction', fontsize=14)
 plt.grid(axis='x', linestyle='--', alpha=0.7)
 plt.tight_layout()
+
+if os.path.exists("feature_importance.png"):
+    os.remove("feature_importance.png")
 plt.savefig("feature_importance.png")
 plt.show()
