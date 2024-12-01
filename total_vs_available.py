@@ -22,5 +22,4 @@ plt.grid()
 if os.path.exists("total_vs_available.png"):
     os.remove("total_vs_available.png")
 plt.savefig("total_vs_available.png")
-
 plt.show()
