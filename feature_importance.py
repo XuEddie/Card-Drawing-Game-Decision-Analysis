@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 import seaborn as sns
 
-
 data = pd.read_csv('data.csv')
 
 def feature_processing(df):
@@ -15,7 +14,6 @@ def feature_processing(df):
     return df
 
 data = feature_processing(data)
-
 X = data[['expected_draws', 'available_draws', 'preference', 
           'already_draws', 'guaranteed_draws', 'total_draws', 'got_character']]
 y = data['satisfaction']
